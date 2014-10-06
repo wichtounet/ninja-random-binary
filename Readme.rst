@@ -1,0 +1,2 @@
+ninja-random-binary
+===================
