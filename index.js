@@ -21,7 +21,7 @@ function random_binary_driver(opts,app) {
 
 random_binary_driver.prototype.config = function(rpc, call_back) {
     if (!rpc) {
-        return config_handlers.menu.call(this, this.opts.frequency, call_back);
+        return config_handlers.menu.call(this, this.opts, call_back);
     } else if (typeof config_handlers[rpc.method] === "function") {
         return config_handlers[rpc.method].call(this, this.opts, rpc.params, call_back);
     } else {
