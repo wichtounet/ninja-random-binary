@@ -2,7 +2,6 @@ var random_binary_device = require('./lib/device')
   , util = require('util')
   , stream = require('stream');
 
-// Give our driver a stream interface
 util.inherits(random_binary_driver,stream);
 
 function random_binary_driver(opts,app) {
@@ -13,5 +12,4 @@ function random_binary_driver(opts,app) {
   });
 };
 
-// Export it
 module.exports = random_binary_driver;
